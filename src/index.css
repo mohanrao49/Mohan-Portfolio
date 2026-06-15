@@ -1,0 +1,102 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+body {
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Marquee Animations */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-inner {
+  animation: marqueeScroll 10s linear infinite;
+}
+
+@media (min-width: 768px) {
+  .marquee-inner {
+    animation: marqueeScroll 25s linear infinite;
+  }
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}
+
+/* Footer sliding text */
+@keyframes slide-left {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes slide-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); }
+}
+
+.animate-slide-left {
+  animation: slide-left 40s linear infinite;
+}
+
+.animate-slide-right {
+  animation: slide-right 40s linear infinite;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Custom cursor pulse */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(250, 204, 21, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(250, 204, 21, 0.6); }
+}
+
+/* Typing animation for hero */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+.cursor-blink::after {
+  content: '|';
+  animation: blink 1s infinite;
+  color: #f4c400;
+}
+
+/* AOS overrides */
+[data-aos] {
+  pointer-events: auto !important;
+}
+
+/* Smooth transitions for 3D transforms */
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Marching ants animation (reference site selection effect) */
+@keyframes marchingAnts {
+  0% { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -20; }
+}
+
+.marching-ants {
+  stroke-dasharray: 6 4;
+  animation: marchingAnts 0.5s linear infinite;
+}
+
+/* Perspective utility */
+.perspective-\[2000px\] {
+  perspective: 2000px;
+}
