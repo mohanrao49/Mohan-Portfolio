@@ -37,14 +37,13 @@ export default function Navbar() {
   return (
     <nav
       ref={navRef}
-      className={`fixed top-0 left-0 w-full z-[100] flex items-center justify-between px-4 md:px-8 py-4 md:py-6 bg-transparent transition-transform duration-300 ${
-        visible ? 'translate-y-0' : '-translate-y-full'
-      }`}
+      className={`fixed top-0 left-0 w-full z-[100] flex items-center justify-between px-4 md:px-8 py-4 md:py-6 bg-transparent transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-full'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8 flex items-center justify-between w-full">
         {/* Logo */}
         <a href="#" ref={logoRef} className="text-xl sm:text-2xl md:text-3xl font-black tracking-tight group shrink-0">
-          <span className="text-white transition-colors duration-300 group-hover:text-gray-200">Lema</span>
+          <span className="text-white transition-colors duration-300 group-hover:text-gray-200">Mohan Rao</span>
           <span className="text-[#facc15] transition-all duration-300 group-hover:drop-shadow-[0_0_12px_rgba(250,204,21,0.6)]">.web</span>
         </a>
 
@@ -82,9 +81,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden fixed inset-0 bg-zinc-950/95 backdrop-blur-3xl flex flex-col items-center justify-center gap-8 transition-all duration-500 z-[100] ${
-          menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
-        }`}
+        className={`md:hidden fixed inset-0 bg-zinc-950/95 backdrop-blur-3xl flex flex-col items-center justify-center gap-8 transition-all duration-500 z-[100] ${menuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          }`}
       >
         {navItems.map((item) => (
           <a

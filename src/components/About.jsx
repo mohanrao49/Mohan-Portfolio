@@ -90,7 +90,7 @@ export default function About() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
               {[
                 { num: '8+', label: 'REST APIs Built' },
-                { num: '50+', label: 'Users Supported' },
+                { num: '10+', label: 'Users Supported' },
                 { num: '100+', label: 'Issues Managed' },
                 { num: '8.85', label: 'CGPA' },
               ].map((stat) => (
