@@ -10,7 +10,7 @@ const bgColors = [
 ]
 
 export default function HeroBackground() {
-  const [activeBg, setActiveBg] = useState(bgColors[1]) // default yellow
+  const [activeBg, setActiveBg] = useState(bgColors[0]) // default red
 
   return (
     <div
