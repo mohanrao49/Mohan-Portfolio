@@ -58,6 +58,7 @@ export default function Welcome() {
           ref={imageRef}
           src="/assets/hero1.png" // User can change this to a close-up portrait
           alt="Welcome Portrait"
+          loading="lazy"
           className="w-auto h-full object-cover object-top drop-shadow-2xl"
           style={{
             // Gradient mask to fade the bottom into white

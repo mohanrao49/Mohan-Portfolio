@@ -150,11 +150,11 @@ export default function Services() {
             ref={(el) => (cardRefs.current[i] = el)}
             className="absolute w-[80vw] sm:w-[350px] md:w-[420px] h-[450px] md:h-[550px] rounded-[30px] border border-white/20 flex flex-col justify-between overflow-hidden group shadow-[0_20px_50px_rgba(0,0,0,0.5)]"
           >
-            {/* Background Image */}
             <div className="absolute inset-0 z-0">
               <img 
                 src={s.img} 
                 alt={s.title} 
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               {/* Dark overlay so text is readable */}

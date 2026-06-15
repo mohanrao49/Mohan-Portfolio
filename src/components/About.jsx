@@ -69,7 +69,7 @@ export default function About() {
                 <div className="w-full h-full bg-[radial-gradient(circle_at_center,rgba(255,255,255,1)_0%,rgba(240,240,240,1)_100%)] flex items-center justify-center absolute inset-0">
                   <span className="text-6xl md:text-8xl font-black text-[#d9a300]/30">MR</span>
                 </div>
-                {<img src="/assets/about1.png" alt="Mohan Rao" className="w-full h-full object-cover relative z-10" />}
+                {<img src="/assets/about1.png" alt="Mohan Rao" loading="lazy" className="w-full h-full object-cover relative z-10" />}
               </div>
               {/* Decorative elements */}
               <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#f4c400]/15 rounded-full blur-[40px]" />
